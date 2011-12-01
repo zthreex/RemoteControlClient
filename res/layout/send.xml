@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:gravity="center">
+	
+	<TextView android:text="自动发送至的号码" android:id="@+id/textView1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+	</TextView>
+	<EditText android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/desAddr"
+		android:layout_below="@+id/textView1">
+	</EditText>
+	
+	<TextView android:text="自动发送间隔（分钟）" android:id="@+id/textView2"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_below="@+id/desAddr">
+	</TextView>
+	<EditText android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/sendPeriod"
+		android:numeric="integer"
+		android:layout_below="@+id/textView2">
+	</EditText>
+
+	<Button android:text="确定" android:id="@+id/btnSendConfirm"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:layout_toLeftOf="@+id/btnSendReturn" android:layout_alignTop="@+id/btnSendReturn">
+	</Button>
+	
+	<Button android:text="返回" android:id="@+id/btnSendReturn"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+		android:layout_alignParentRight="true" android:layout_marginLeft="10dip"
+		android:layout_below="@+id/sendPeriod">
+	</Button>
+		
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/smart_phone"
+	android:gravity="center"
+	>
+	
+	<TextView android:text="手机远程控制" android:id="@+id/textView1"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" ></TextView>
+	
+	<ToggleButton android:id="@+id/tbtnService" 
+								android:textOn="服务开启中" 
+								android:textOff="服务关闭中" 
+								android:layout_width="85dip" 
+								android:layout_height="85dip"
+								android:layout_below="@id/textView1"> 
+								</ToggleButton>
+	
+	<Button android:text="操作记录" 
+				android:id="@+id/btnLog" 
+				android:layout_width="85dip" 
+				android:layout_height="70dip"
+				android:layout_below="@id/tbtnService">
+				</Button>
+	<Button android:text="设置" 
+				android:id="@+id/btnSettings" 
+				android:layout_width="85dip" 
+				android:layout_height="70dip"
+				android:layout_below="@id/btnLog">
+				</Button>
+</RelativeLayout>

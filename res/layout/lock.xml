@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:gravity="center">
+
+	<TextView android:id="@+id/myOwnMessage" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	</TextView>
+
+	<TextView android:text="要解锁请输入密码" android:id="@+id/textView1"
+		android:layout_below="@+id/myOwnMessage" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	</TextView>
+
+	<EditText android:id="@+id/getUnlockPassword"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:password="true"
+		android:layout_below="@+id/textView1">
+	</EditText>
+
+	<Button android:layout_width="wrap_content" android:text="确认"
+		android:layout_height="wrap_content" android:id="@+id/btnStopLock"
+		android:layout_below="@+id/getUnlockPassword">
+	</Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:gravity="center">
+	<Button android:text="锁死密码设置" android:id="@+id/btnPasswordSettings"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+	</Button>
+	<Button android:text="控制密码设置" android:id="@+id/btnControlPasswordSettings"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/btnPasswordSettings">
+	</Button>
+	<Button android:text="主动发送设置" android:id="@+id/btnSendSettings"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/btnControlPasswordSettings">
+	</Button>
+	<Button android:text="返回" android:id="@+id/btnReturn"
+		android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/btnSendSettings">
+	</Button>
+
+</RelativeLayout>
